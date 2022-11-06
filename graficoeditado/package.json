@@ -1,0 +1,14 @@
+{
+  "name": "@daocampol/grafico-multilinea-sgr-por-entidad",
+  "main": "c9ca3b30e94457a2@340.js",
+  "version": "340.0.0",
+  "homepage": "https://observablehq.com/@daocampol/grafico-multilinea-sgr-por-entidad",
+  "author": {
+    "name": "David Alejandro Ocampo Lopez",
+    "url": "https://observablehq.com/@daocampol"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
