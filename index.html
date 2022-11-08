@@ -491,7 +491,46 @@
                                     <div class="chart-area">
                                         <!-- <canvas id="myAreaChart"></canvas>  -->
                                         <!-- aqui fica o grafico de linha -->
+                                        <canvas class="line-chart"></canvas>
 
+                                        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+                                    
+                                        <script>
+                                            var ctx = document.getElementsByClassName("line-chart");
+                                    
+                                            var chartGraph = new Chart(ctx, {
+                                                type: 'line',
+                                                data: {
+                                                    labels: ["Jan", "Fev", "Mar", "Abr", "MaI", "Jun", "Ago", "Set", "Out", "Nov", "Dez"],
+                                                    datasets: [
+                                                    {
+                                                        label: "Taxa de respostas das Atividades",
+                                                        data: [1, 3, 4, 6, 7, 6, 8, 9, 10, 9, 10],
+                                                        borderWidth: 6,
+                                                        borderColor: 'rgba(77, 166, 253, 0.85)',
+                                                        backgroundColor: 'transparent',
+                                                    },
+                                                    {
+                                                        label: "Taxa de respostas das Provas",
+                                                        data: [5, 4, 6, 5, 7, 9, 6, 7, 10, 6, 10],
+                                                        borderWidth: 6,
+                                                        borderColor: 'rgba(6, 204, 6, 0.85)',
+                                                        backgroundColor: 'transparent',
+                                                    },
+                                    
+                                                    ]
+                                                },
+                                                options: {
+                                                    plugins: {
+                                                        title: {
+                                                            display: true,
+                                                            fontSize: 20,
+                                                            text: 'Relatorio de exercicios anual'
+                                                        }
+                                                    },
+                                                },
+                                            });
+                                        </script>
                                     </div>
                                 </div>
                             </div>
